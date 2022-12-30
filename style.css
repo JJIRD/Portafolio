@@ -39,7 +39,7 @@ html {
 
 #inicio .contenido header .contenido-header h1 {
   text-align: center;
-  color: #85d4ff;
+  color: #639CBF;
 }
 
 #inicio .contenido header .contenido-header nav ul {
@@ -57,7 +57,7 @@ html {
 }
 
 #inicio .contenido header .contenido-header nav ul li a:hover {
-  color: #85d4ff;
+  color: #639CBF;
 }
 
 #inicio .contenido header .contenido-header .redes a {
@@ -69,11 +69,11 @@ html {
 }
 
 #inicio .contenido header .contenido-header .redes a:hover {
-  color: #85d4ff;
+  color: #639CBF;
 }
 
 #inicio .contenido header .contenido-header .seleccionado {
-  color: #85d4ff;
+  color: #639CBF;
 }
 
 #inicio .contenido .presentacion {
@@ -102,7 +102,7 @@ html {
 
 #inicio .contenido .presentacion h2 span {
   font-size: 25px;
-  color: #85d4ff;
+  color: #639CBF;
 }
 
 #inicio .contenido .presentacion .descripcion {
@@ -126,7 +126,7 @@ html {
 }
 
 #inicio .contenido .presentacion a:hover {
-  background-color: #85d4ff;
+  background-color: #639CBF;
 }
 
 #icono-nav {
@@ -177,7 +177,7 @@ html {
 }
 
 #sobremi .sobremi h2 span {
-  color: #85d4ff;
+  color: #639CBF;
 }
 
 #sobremi .sobremi h3 {
@@ -207,7 +207,7 @@ html {
 }
 
 #sobremi .sobremi a:hover {
-  background-color: #85d4ff;
+  background-color: #639CBF;
   color: #fff;
 }
 
@@ -286,7 +286,7 @@ html {
 /* seccion S K I L L S */
 
 .contenedor-skills {
-  background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)), url("img/habilidades.jpg");
+  background: linear-gradient(#639CBF, rgba(33, 16, 16, 0.8)), url("img/habilidades.jpg");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -447,7 +447,7 @@ html {
 
 #portfolio .fila .proyecto .info a{
   text-decoration: none;
-  color: #85d4ff;
+  color: #639CBF;
   transition: 0.5s;
 }
 
@@ -516,7 +516,7 @@ html {
 }
 
 #contacto .btn-enviar:hover {
-  background-color: #85d4ff;
+  background-color: #639CBF;
   color: #fff;
 }
 
@@ -534,6 +534,11 @@ footer a {
   display: inline-block;
   margin: 5px;
   font-size: 26px;
+  transition: 0.5;
+}
+
+footer a:hover {
+  color: #639CBF;
 }
 
 /* seccion R E S P O N S I V E */
