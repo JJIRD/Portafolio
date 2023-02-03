@@ -541,6 +541,9 @@ main .recent-orders a{
         width: 94%;
         grid-template-columns: 7rem auto 23rem;
     }
+    aside .logo img{
+        margin-left: 1.7rem;        
+    }
 
     aside .logo h2{
         display: none;
