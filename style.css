@@ -451,6 +451,11 @@ html {
   transition: 0.5s;
 }
 
+#portfolio .fila .proyecto .info a:hover{
+  color: #ffffff;
+  transition: 0.5s;
+}
+
 #portfolio .fila .proyecto:hover .info {
   opacity: 1;
   bottom: 0;
