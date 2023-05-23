@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #1c1e26;
+    font-family: sans-serif;
+    max-width: 500px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+input[type="color"]{
+    border: none;
+    width: 32.5%;
+    height: 40px;
+    border-radius: 3px;
+}
+
+
