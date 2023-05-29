@@ -42,3 +42,29 @@ window.addEventListener("load", () =>{
         dayNight.querySelector("i").classList.add("fa-moon");
     }
 })
+
+/* ========================== Multi language ========================== */
+// Supongamos que tienes un selector de idioma con id "selector-idioma"
+var selectorIdioma = document.getElementById("lang");
+
+// Carga el archivo JSON de traducciones
+fetch("js/translations.json")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    // Función para traducir los textos
+    function traducir(idioma) {
+      var traducciones = data[idioma]; // Obtiene las traducciones correspondientes al idioma seleccionado
+
+      // Actualiza los textos en la página
+      document.getElementById("hello").textContent = traducciones["welcome wey"];
+      document.getElementById("mensaje").textContent = traducciones["hello"];
+    }
+
+    // Evento de cambio de idioma
+    selectorIdioma.addEventListener("change", function() {
+      var idiomaSeleccionado = selectorIdioma.value;
+      traducir(idiomaSeleccionado);
+    });
+  });

@@ -43,6 +43,9 @@
 .style-switcher .day-night
 {
     top: 55px;
+}.style-switcher .lang
+{
+    top: 110px;
 }
 .style-switcher h4
 {

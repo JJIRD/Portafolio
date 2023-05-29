@@ -1,0 +1,17 @@
+{
+    "es": {
+      "welcome": "Bienvenido",
+      "hello": "Hola",
+      "goodbye": "Adiós"
+    },
+    "en": {
+      "welcome": "Welcome",
+      "hello": "Hello",
+      "goodbye": "Goodbye"
+    },
+    "fr": {
+      "welcome": "Bienvenue",
+      "hello": "Bonjour",
+      "goodbye": "Au revoir"
+    }
+  }
