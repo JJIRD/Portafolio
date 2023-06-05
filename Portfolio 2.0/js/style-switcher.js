@@ -44,27 +44,55 @@ window.addEventListener("load", () =>{
 })
 
 /* ========================== Multi language ========================== */
-// Supongamos que tienes un selector de idioma con id "selector-idioma"
-var selectorIdioma = document.getElementById("lang");
+let currentLanguage = "es";
+let translations;
 
-// Carga el archivo JSON de traducciones
-fetch("js/translations.json")
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(data) {
-    // Función para traducir los textos
-    function traducir(idioma) {
-      var traducciones = data[idioma]; // Obtiene las traducciones correspondientes al idioma seleccionado
+function loadTranslations() {
+  fetch(`languages/${currentLanguage}.json`)
+    .then(response => response.json())
+    .then(data => {
+      translations = data;
+      updateText();
 
-      // Actualiza los textos en la página
-      document.getElementById("hello").textContent = traducciones["welcome wey"];
-      document.getElementById("mensaje").textContent = traducciones["hello"];
-    }
+      var typed = new Typed(".typing", {
+        strings:["Web Designer","","Web Developer","Graphic Designer","YouTuber"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    })
+    
+    })
+    .catch(error => console.error(error));
+}
+function updateText() {
+     /* ======================== aside ======================= */
+    document.getElementById("inicio").innerHTML = "<i class='" + translations.homeIcon + "'></i>" + translations.inicio;
+    document.getElementById("inicio").href = "#home";
+    document.getElementById("sobreMi").innerHTML = "<i class='" + translations.sobreMiIcon + "'></i>" + translations.sobreMi;
+    document.getElementById("sobreMi").href = "#about";
+    document.getElementById("servicios").innerHTML = "<i class='" + translations.serviciosIcon + "'></i>" + translations.servicios;
+    document.getElementById("portafolio").innerHTML = "<i class='" + translations.portafolioIcon + "'></i>" + translations.portafolio;
+    document.getElementById("contacto").innerHTML = "<i class='" + translations.contactoIcon + "'></i>" + translations.contacto;
+    /* ======================== Inicio ======================= */
+    document.getElementById("greeting").innerHTML = translations.greeting + " <span class='span'>" + translations.name + "</span>"
+    document.getElementById("hola").innerHTML = translations.io + " <span class='typing'>" + translations.io1 + "</span>";
+    document.getElementById("descargar").innerHTML = translations.dl;
+    document.getElementById("sobreMi1").innerHTML = translations.sobreMi1;
+}
 
-    // Evento de cambio de idioma
-    selectorIdioma.addEventListener("change", function() {
-      var idiomaSeleccionado = selectorIdioma.value;
-      traducir(idiomaSeleccionado);
-    });
-  });
+ /* ======================== typing animate ======================= */
+
+
+function changeLanguage() {
+  if (currentLanguage === "en") {
+    currentLanguage = "es";
+  } else {
+    currentLanguage = "en";
+  }
+
+  loadTranslations();
+}
+
+document.getElementById("lang").addEventListener("click", changeLanguage);
+
+loadTranslations();

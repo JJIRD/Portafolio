@@ -29,11 +29,11 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#home" class="active"><i class="fa fa-home"></i>Inicio</a></li>
-                <li><a href="#about"><i class="fa fa-user"></i>Sobre Mi</a></li>
-                <li><a href="#services"><i class="fa fa-list"></i>Servicios</a></li>
-                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>portafolio</a></li>
-                <li><a href="#contact"><i class="fa fa-comments"></i>Contacto</a></li>
+                <li><a href="#home" class="active" id="inicio"></a></li>
+                <li><a href="#about" id="sobreMi"></a></li>
+                <li><a href="#services" id="servicios"></a></li>
+                <li><a href="#portfolio" id="portafolio"></a></li>
+                <li><a href="#contact" id="contacto"></a></li>
             </ul>
         </div>
         <!-- ===== Aside End ===== -->
@@ -44,10 +44,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
-                            <h3 class="hello">Hola, mi nombre es <span>Ignacio R. Davila</span></h3>
-                            <h3 class="my-profession">yo soy <span class="typing">Web Designer</span></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quis reiciendis aut accusamus iure quos cumque, fugiat quasi cum alias!</p>
-                            <a href="#" class="btn">Download Cv</a>
+                            <h3 class="hello" id="greeting"></h3>
+                            <h3 class="my-profession" id="hola">yo soy <span class="typing">Web Designer</span></h3>
+                            <p id="sobreMi1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quis reiciendis aut accusamus iure quos cumque, fugiat quasi cum alias!</p>
+                            <a href="#" class="btn" id="descargar">Download Cv</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="images/hero.jpg" alt="">
@@ -55,7 +55,7 @@
                     </div>
                 </div>
             </section>
-            <!-- ===== Home Seccion End ===== -->
+            <!-- ===== Home Seccion End ===== --> 
             <!-- ===== About Seccion Start ===== -->
                 <section class="about section" id="about">
                     <div class="container">
@@ -458,8 +458,8 @@
         <!-- ===== Main Container End ===== -->
         <!-- ===== Style Switcher Start ===== -->
         <div class="style-switcher">
-            <div class="lang s-icon">
-                <i class="fa fa-language "></i>
+            <div class="lang s-icon" id="lang">
+                <i class="fas fa-language" id="buttonIcon"></i>
             </div>
             <div class="style-switcher-toggler s-icon">
                 <i class="fas fa-cog fa-spin"></i>
@@ -481,5 +481,8 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>    
     <script src="js/script.js"></script>
     <script src="js/style-switcher.js"></script>
+    <script src=""></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </body>
 </html> 
