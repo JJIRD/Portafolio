@@ -48,7 +48,7 @@ let currentLanguage = "es";
 let translations;
 
 function loadTranslations() {
-  fetch(`languages/${currentLanguage}.json`)
+  fetch(`js/languages/${currentLanguage}.json`)
     .then(response => response.json())
     .then(data => {
       translations = data;
@@ -60,7 +60,7 @@ function loadTranslations() {
         backSpeed: 60,
         loop: true
     })
-    
+
     })
     .catch(error => console.error(error));
 }
