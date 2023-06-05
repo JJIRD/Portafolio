@@ -48,7 +48,7 @@ let currentLanguage = "es";
 let translations;
 
 function loadTranslations() {
-  fetch(`js/languages/${currentLanguage}.json`)
+  fetch(`js/${currentLanguage}.json`)
     .then(response => response.json())
     .then(data => {
       translations = data;

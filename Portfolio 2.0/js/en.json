@@ -1,0 +1,19 @@
+{
+  "greeting": "Hello, My Name Is",
+  "name": "Ignacio R. Davila",
+  "inicio": "Home",
+  "homeIcon": "fa fa-home",
+  "sobreMi": "About",
+  "sobreMiIcon": "fa fa-user",
+  "servicios":"Services",
+  "serviciosIcon": "fa fa-list",
+  "portafolio": "Portfolio",
+  "portafolioIcon": "fa fa-briefcase",
+  "contacto": "Contact",
+  "contactoIcon": "fa fa-comments",
+  "io": "I' am", 
+  "io1": "Web Designer",
+  "dl": "Download CV",
+  "sobreMi1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quis reiciendis aut accusamus iure quos cumque, fugiat quasi cum alias!"
+  }
+  
