@@ -40,7 +40,7 @@
         <!-- ===== Main Content Start ===== -->
         <div class="main-content">
             <!-- ===== Home Seccion Start ===== -->
-            <section class="home active section" id="home">
+            <section class="home active section hidden" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -57,52 +57,52 @@
             </section>
             <!-- ===== Home Seccion End ===== --> 
             <!-- ===== About Seccion Start ===== -->
-                <section class="about section" id="about">
+                <section class="about section hidden" id="about">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
-                                <h2>Acerca De Mí</h2>
+                                <h2 id="Hacerca"></h2>
                             </div>
                         </div>
                         <div class="row">
                             <div class="about-content padd-15">
                                 <div class="row">
                                     <div class="about-text padd-15">
-                                        <h3>Soy Ignacio R. Davila y <span>Desarollador Web</span></h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo esse molestiae consequuntur iure ut, minus aspernatur voluptatibus earum quibusdam ullam mollitia laudantium. Atque tenetur rem, vel consequatur dignissimos explicabo voluptates.</p>
+                                        <h3 id="presente"></h3>
+                                        <p id="detalles"></p>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="personal-info padd-15">
                                         <div class="row">
                                             <div class="info-item padd-15">
-                                                <p>Birthday: <span>17 sep 1999</span></p>
+                                                <p id="cumpleanos"></p>
                                             </div>
                                             <div class="info-item padd-15">
-                                                <p>age: <span>22</span></p>
+                                                <p id="edad"></p>
                                             </div>
                                             <div class="info-item padd-15">
-                                                <p>Website: <span>www.domain.com</span></p>
+                                                <p id="website"></p>
                                             </div>
                                             <div class="info-item padd-15">
-                                                <p>Email: <span>info@gmail.com</span></p>
+                                                <p>Email: <span>Josejird.p@gmail.com</span></p>
                                             </div>
                                             <div class="info-item padd-15">
-                                                <p>Degree: <span>CS</span></p>
+                                                <p id="idiomas">Degree: <span>CS</span></p>
                                             </div>
                                             <div class="info-item padd-15">
-                                                <p>Phone: <span>+17 678 1996</span></p>
+                                                <p id="telefono"></p>
                                             </div>
                                             <div class="info-item padd-15">
-                                                <p>City: <span>Islambad</span></p>
+                                                <p id="ciudad"></p>
                                             </div>
                                             <div class="info-item padd-15">
-                                                <p>Frelance: <span>Available</span></p>
+                                                <p>Frelance: <span id="free"></span></p>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="buttons padd-15">
-                                                <a href="#contact" date-section-index="1" class="btn hire-me">Contratame</a>
+                                                <a href="#contact" date-section-index="1" class="btn hire-me" id="trabajo1"></a>
                                             </div>
                                         </div>
                                     </div>
@@ -141,7 +141,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="education padd-15">
-                                        <h3 class="title">Education</h3>
+                                        <h3 class="title" id="estudios"></h3>
                                         <div class="row">
                                             <div class="timeline-box padd-15">
                                                 <div class="timeline shadow-dark">
@@ -177,7 +177,7 @@
                                         </div>
                                     </div>
                                     <div class="experience padd-15">
-                                        <h3 class="title">Experience</h3>
+                                        <h3 class="title" id="experiencia"></h3>
                                         <div class="row">
                                             <div class="timeline-box padd-15">
                                                 <div class="timeline shadow-dark">
@@ -219,11 +219,11 @@
                 </section>
                 <!-- ===== About Seccion End ===== -->
                 <!-- ===== Services Seccion Start ===== -->
-                <section class="service section" id="services">
+                <section class="service section hidden" id="services">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
-                                <h2>Sevices</h2>
+                                <h2 id="servicio"></h2>
                             </div>
                         </div>
                         <div class="row">
@@ -298,26 +298,31 @@
                 </section>
                 <!-- ===== Services Seccion End ===== -->
                 <!-- ===== Porfolio Seccion Start ===== -->
-                <section class="portfolio section" id="portfolio">
+                <section class="portfolio section " id="portfolio">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
-                                <h2>Porfolio</h2>
+                                <h2 id="porta"></h2>
                             </div>
                         </div>
                         <div class="row">
                             <div class="portfolio-heading padd-15">
-                                <h2>My Last Project :</h2>
+                                <h2 id="proyectos"></h2>
                             </div>
                         </div>
                         <div class="row">
                             <!--===== portafolio item start =====-->
-                            <div class="portfolio-item padd-15">
+                            <div class="portfolio-item card padd-15">
                                 <div class="portfolio-item-inner shadow-dark">
                                     <div class="portfolio-img">
                                         <img src="images/portfolio/portfolio-1.jpg" alt="">
                                     </div>
                                 </div>
+                                <div class="info">
+                                    <h1>Mountain</h1>
+                                    <p>Lorem Ipsum is simply dummy text from the printing and typeseting industry</p>
+                                    <button>Read More</button>
+                                  </div>
                             </div>
                             <!--===== portafolio item end =====-->
                             <!--===== portafolio item start =====-->
@@ -370,80 +375,80 @@
                 </section>
                 <!-- ===== Porfolio Seccion End ===== -->
                 <!--===== Contact Section start =====-->
-                <section class="contact section" id="contact">
+                <section class="contact section hidden" id="contact">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
-                                <h2>Contact Me</h2>
+                                <h2 id="contactame"></h2>
                             </div>
                         </div>
-                        <h3 class="contact-title padd-15">Have You Any Questions ?</h3>
-                        <h4 class="contact-sub-title padd-15">I'M AT YOUR SERVICES</h4>
+                        <h3 class="contact-title padd-15" id="preguntas"></h3>
+                        <h4 class="contact-sub-title padd-15" id="Asus"></h4>
                         <div class="row">
                             <!-- ===== Contact info item start ===== -->
                             <div class="contact-info-item padd-15">
                                 <div class="icon"><i class="fa fa-phone"></i></div>
-                                <h4>call Us On</h4>
-                                <p>+92 3330545218</p>
+                                <h4 id="callme"></h4>
+                                <p>+505 88642203</p>
                             </div>
                             <!-- ===== Contact info item end ===== -->
                             <!-- ===== Contact info item start ===== -->
                             <div class="contact-info-item padd-15">
                                 <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
-                                <h4>Office</h4>
-                                <p>Isalamabad</p>
+                                <h4 id="oficina"></h4>
+                                <p>Diriamba - Nicaragua</p>
                             </div>
                             <!-- ===== Contact info item end ===== -->
                             <!-- ===== Contact info item start ===== -->
                             <div class="contact-info-item padd-15">
                                 <div class="icon"><i class="fa fa-envelope"></i></div>
                                 <h4>Email</h4>
-                                <p>info@gmail.com</p>
+                                <p>josejird.p@gmail.com</p>
                             </div>
                             <!-- ===== Contact info item end ===== -->
                             <!-- ===== Contact info item start ===== -->
                             <div class="contact-info-item padd-15">
                                 <div class="icon"><i class="fa fa-globe-europe"></i></div>
-                                <h4>Website</h4>
-                                <p>www.domain.com</p>
+                                <h4 id="sitio"></h4>
+                                <p>www.devignacio.cf</p>
                             </div>
                             <!-- ===== Contact info item end ===== -->
                         </div>
-                        <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
-                        <h4 class="contact-sub-title padd-15">I'M VERY RESPOSIVE TO MESSAGES</h4>
+                        <h3 class="contact-title padd-15" id="send">SEND ME AN EMAIL</h3>
+                        <h4 class="contact-sub-title padd-15" id="respuesta"></h4>
                         <!-- ===== Contact Form ===== -->
                         <div class="row">
                             <div class="contact-form padd-15">
                                 <div class="row">
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Name">
+                                            <input type="text" class="form-control" id="cname">
                                         </div>
                                     </div>
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
-                                            <input type="email" class="form-control" placeholder="Email">
+                                            <input type="email" class="form-control" id="cemail">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <input type="text" class="form-control" placeholder="Subject">
+                                            <input type="text" class="form-control" id="csubject">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <textarea name="" class="form-control" id=""placeholder="Message"></textarea>
+                                            <textarea name="" class="form-control" id="cmensaje"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="form-item col-12 padd-15">
                                         <div class="form-group">
-                                            <button type="submit" class="btn">Send Message</button>
+                                            <button type="submit" class="btn" id="cenviar"></button>
                                         </div>
                                     </div>
                                 </div>

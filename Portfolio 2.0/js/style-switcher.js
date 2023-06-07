@@ -65,6 +65,27 @@ function loadTranslations() {
     .catch(error => console.error(error));
 }
 function updateText() {
+    document.getElementById("idiomas").innerHTML = translations.idiomas + "<span>" + translations.Grado + "</span>";
+    document.getElementById("trabajo1").innerHTML = translations.trabajo1;
+    document.getElementById("experiencia").innerHTML = translations.experiencia;
+    document.getElementById("estudios").innerHTML = translations.estudios;
+    document.getElementById("servicio").innerHTML = translations.servicios;
+    document.getElementById("porta").innerHTML = translations.portafolio;
+    document.getElementById("proyectos").innerHTML = translations.proyectos;
+
+    document.getElementById("contactame").innerHTML = translations.contactame;
+    document.getElementById("preguntas").innerHTML = translations.preguntas;
+    document.getElementById("Asus").innerHTML = translations.Asus;
+    document.getElementById("callme").innerHTML = translations.callme;
+    document.getElementById("sitio").innerHTML = translations.website2;
+    document.getElementById("oficina").innerHTML = translations.oficina;  
+    document.getElementById("send").innerHTML = translations.send;  
+    document.getElementById("respuesta").innerHTML = translations.respuesta;
+    document.getElementById("cname").placeholder = translations.cname;
+    document.getElementById("cemail").placeholder = translations.cemail;
+    document.getElementById("csubject").placeholder = translations.csubject;
+    document.getElementById("cmensaje").placeholder = translations.cmensaje;
+    document.getElementById("cenviar").innerHTML = translations.cenviar;
      /* ======================== aside ======================= */
     document.getElementById("inicio").innerHTML = "<i class='" + translations.homeIcon + "'></i>" + translations.inicio;
     document.getElementById("inicio").href = "#home";
@@ -78,6 +99,17 @@ function updateText() {
     document.getElementById("hola").innerHTML = translations.io + " <span class='typing'>" + translations.io1 + "</span>";
     document.getElementById("descargar").innerHTML = translations.dl;
     document.getElementById("sobreMi1").innerHTML = translations.sobreMi1;
+    /* ======================== Sobre mi ======================= */
+    document.getElementById("Hacerca").innerHTML = translations.Hacerca;
+    document.getElementById("presente").innerHTML = translations.presente + " <span>" + translations.trabajo + "</span>";
+    document.getElementById("detalles").innerHTML = translations.detalles;
+    document.getElementById("edad").innerHTML = translations.edad + " <span>22</span>";;
+    document.getElementById("cumpleanos").innerHTML = translations.cumpleanos + "<span> 16 sep 1996</span>";
+    document.getElementById("website").innerHTML = translations.website + "<span> www.devignacio.cf</span>";
+    document.getElementById("telefono").innerHTML = translations.telefono + "<span>+505 88642203</span>";
+    document.getElementById("ciudad").innerHTML = translations.ciudad +" <span> Diriamba - Nicaragua</span>";
+    document.getElementById("free").innerHTML = translations.free;
+    document.getElementById("email").innerHTML = translations.email + "<span> devignacio@gmail.com</span>";
 }
 
  /* ======================== typing animate ======================= */
