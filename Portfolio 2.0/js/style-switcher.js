@@ -52,6 +52,7 @@ function loadTranslations() {
     .then(response => response.json())
     .then(data => {
       translations = data;
+      //opacar id buttonIcon por d1 segundo
       updateText();
 
       var typed = new Typed(".typing", {
@@ -118,8 +119,12 @@ function updateText() {
 function changeLanguage() {
   if (currentLanguage === "en") {
     currentLanguage = "es";
+    document.getElementById("buttonIcon").style.opacity = 0.5;
+    setTimeout(function(){ document.getElementById("buttonIcon").style.opacity = 1; }, 100);
   } else {
     currentLanguage = "en";
+    document.getElementById("buttonIcon").style.opacity = 0.5;
+    setTimeout(function(){ document.getElementById("buttonIcon").style.opacity = 1; }, 100);
   }
 
   loadTranslations();
