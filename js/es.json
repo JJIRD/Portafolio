@@ -1,7 +1,9 @@
 {
   "cenviar":"Enviar Mensaje",
   "cname":"Nombre",
-  "cemail":"Correo",
+  "correo":"Correo:",
+  "correoa":"Correo",
+  "correob":"Correo",
   "csubject":"Asunto",
   "cmensaje":"Mensaje",
   "respuesta":"Soy muy receptivo a los mensajes",

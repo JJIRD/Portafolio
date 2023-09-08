@@ -1,7 +1,9 @@
 {
   "cenviar":"Sedn Message",
   "cname":"Name",
-  "cemail":"Email",
+  "correo":"Email:",
+  "correoa":"Email",
+  "correob":"Email",
   "csubject":"Subject",
   "cmensaje":"Message",
   "respuesta":"I'M VERY RESPOSIVE TO MESSAGES",

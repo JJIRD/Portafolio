@@ -83,7 +83,7 @@ function updateText() {
     document.getElementById("send").innerHTML = translations.send;  
     document.getElementById("respuesta").innerHTML = translations.respuesta;
     document.getElementById("cname").placeholder = translations.cname;
-    document.getElementById("cemail").placeholder = translations.cemail;
+    document.getElementById("correob").placeholder = translations.correob;
     document.getElementById("csubject").placeholder = translations.csubject;
     document.getElementById("cmensaje").placeholder = translations.cmensaje;
     document.getElementById("cenviar").innerHTML = translations.cenviar;
@@ -110,7 +110,9 @@ function updateText() {
     document.getElementById("telefono").innerHTML = translations.telefono + "<span>+505 88642203</span>";
     document.getElementById("ciudad").innerHTML = translations.ciudad +" <span> Diriamba - Nicaragua</span>";
     document.getElementById("free").innerHTML = translations.free;
-    document.getElementById("email").innerHTML = translations.email + "<span> devignacio@gmail.com</span>";
+    document.getElementById("correo").innerHTML = translations.correo;
+    document.getElementById("correoa").innerHTML = translations.correoa;
+
 }
 
  /* ======================== typing animate ======================= */
