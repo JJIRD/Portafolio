@@ -56,7 +56,7 @@ function loadTranslations() {
       updateText();
 
       var typed = new Typed(".typing", {
-        strings:["Web Designer","","Web Developer","Graphic Designer","YouTuber"],
+        strings:["Web Designer","","Web Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -104,14 +104,27 @@ function updateText() {
     document.getElementById("Hacerca").innerHTML = translations.Hacerca;
     document.getElementById("presente").innerHTML = translations.presente + " <span>" + translations.trabajo + "</span>";
     document.getElementById("detalles").innerHTML = translations.detalles;
-    document.getElementById("edad").innerHTML = translations.edad + " <span>22</span>";;
+    
+    let fechaNacimiento = new Date(1996, 8, 16);
+    let hoy = new Date();
+
+    let edad = hoy.getFullYear() - fechaNacimiento.getFullYear();
+    let mes = hoy.getMonth() - fechaNacimiento.getMonth();
+        let dia = hoy.getDate() - fechaNacimiento.getDate();
+
+    if (mes < 0 || (mes === 0 && dia < 0)) {
+        edad--;
+    }
+    document.getElementById("edad").innerHTML = translations.edad + " <span>" + edad + "</span>";
     document.getElementById("cumpleanos").innerHTML = translations.cumpleanos + "<span> 16 sep 1996</span>";
-    document.getElementById("website").innerHTML = translations.website + "<span> www.devignacio.cf</span>";
+    document.getElementById("website").innerHTML = translations.website + "<span> devignacio.site</span>";
     document.getElementById("telefono").innerHTML = translations.telefono + "<span>+505 88642203</span>";
     document.getElementById("ciudad").innerHTML = translations.ciudad +" <span> Diriamba - Nicaragua</span>";
     document.getElementById("free").innerHTML = translations.free;
-    document.getElementById("correo").innerHTML = translations.correo;
-    document.getElementById("correoa").innerHTML = translations.correoa;
+    document.getElementById("correo").innerHTML = translations.correo +" <span>Josejird.p@gmail.com</span>";
+    document.getElementById("correoa").innerHTML = translations.correoa+" <span>Josejird.p@gmail.com</span>";
+
+    
 
 }
 
